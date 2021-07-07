@@ -29,7 +29,7 @@ npm install
 4. 啟動伺服器來執行專案
 
 ```
-npm app.js
+npm run dev
 ```
 
 5. 出現以下訊息即可打開瀏覽器輸入 http://localhost:3000/ 開始使用
