@@ -32,7 +32,7 @@ npm install
 npm run dev
 ```
 
-5. 出現以下訊息即可打開瀏覽器輸入 http://localhost:3000/ 開始使用
+5. 出現以下訊息即可打開瀏覽器輸入 http://localhost:3000 開始使用
 
 ```
 Express app is listening on http://localhost:3000.
