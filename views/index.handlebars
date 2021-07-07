@@ -1,5 +1,5 @@
 <div class="container">
-  <form method="GET" action="/who">
+  <form method="POST" action="/">
     <fieldset class="form-group">
       <legend for="target" class="d-flex justify-content-center align-items-center">
         <h2>你想對誰說幹話？</h2>
@@ -9,21 +9,21 @@
         <div class="card d-flex justify-content-center align-items-center">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top">
           <div class="form-check card-body d-flex align-items-end">
-            <input class="form-check-input mb-1" type="radio" name="target" id="engineer" value="engineer">
+            <input class="form-check-input mb-1" type="radio" name="target" id="engineer" value="engineer" {{#if (isTarget option.target 'engineer')}}checked{{/if}}>
             <label class="form-check-label" for="engineer">工程師</label>
           </div>
         </div>
         <div class="card d-flex justify-content-center align-items-center">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top">
           <div class="card-body d-flex align-items-end">
-            <input class="form-check-input mb-1" type="radio" name="target" id="designer" value="designer">
+            <input class="form-check-input mb-1" type="radio" name="target" id="designer" value="designer" {{#if (isTarget option.target 'designer')}}checked{{/if}}>
             <label class="form-check-label" for="designer">設計師</label>
           </div>
         </div>
         <div class="card d-flex justify-content-center align-items-center">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top">
           <div class="card-body d-flex align-items-end">
-            <input class="form-check-input mb-1" type="radio" name="target" id="entrepreneur" value="entrepreneur">
+            <input class="form-check-input mb-1" type="radio" name="target" id="entrepreneur" value="entrepreneur" {{#if (isTarget option.target 'entrepreneur')}}checked{{/if}}>
             <label class="form-check-label" for="entrepreneur">創業家</label>
           </div>
         </div>

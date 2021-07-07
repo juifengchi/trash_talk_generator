@@ -6,7 +6,20 @@ const app = express()
 const port = 3000
 
 // setting template engine
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
+app.engine(
+  'handlebars',
+  exphbs({
+    defaultLayout: 'main',
+    helpers: {
+      isTarget: function (optionTarget, target) {
+        if (optionTarget === target) {
+          return true
+        }
+      }
+    }
+  })
+)
+
 app.set('view engine', 'handlebars')
 
 // setting body-parser
@@ -17,8 +30,8 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.get('/who', (req, res) => {
-  const option = req.query
+app.post('/', (req, res) => {
+  const option = req.body
   const trashTalk = generateTrashTalk(option)
   res.render('index', { trashTalk, option })
 })
