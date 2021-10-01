@@ -1,12 +1,18 @@
-# Trash Talk Generator 幹話產生器
+# Trash Talk Generator
 
-透過 Node.js 和 Express 打造表單網站，選擇對象並送出後，將隨機產生一段固定格式的幹話文字。
+透過 Node.js & Express 打造的表單網站，選擇對象並送出後隨機產生一段固定格式的文字
 
-## Preview 畫面預覽
+## Preview
 
 ![](localhost_3000_.png)
 
-## Installing 安裝
+## Prerequisites
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/)
+
+## Installing
 
 1. 打開終端機 (Terminal) 輸入以下訊息，下載專案至本機
 
