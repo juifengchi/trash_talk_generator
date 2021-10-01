@@ -1,6 +1,6 @@
 # Trash Talk Generator
 
-透過 Node.js & Express 打造的表單網站，選擇對象並送出後隨機產生一段固定格式的文字
+透過 Node.js/ Express 打造的表單網站，選擇對象並送出後隨機產生一段固定格式的文字
 
 ## Preview
 
@@ -10,7 +10,7 @@
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en/)
-- [Express.js](https://expressjs.com/)
+- [Express](https://expressjs.com/)
 
 ## Installing
 
